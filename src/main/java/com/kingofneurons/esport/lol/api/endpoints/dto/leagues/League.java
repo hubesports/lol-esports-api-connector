@@ -1,18 +1,14 @@
 package com.kingofneurons.esport.lol.api.endpoints.dto.leagues;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.TextIndexed;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 import java.util.Map;
 
-@Document(collection="lol_league")
 public class League {
 
-    @Id private int id;
+    private int id;
     private String slug;
-    @TextIndexed private String name;
+    private String name;
     private String region;
     private String logoUrl;
     private String createdAt;

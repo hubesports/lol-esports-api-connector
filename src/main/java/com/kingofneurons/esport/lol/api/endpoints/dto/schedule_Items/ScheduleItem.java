@@ -1,14 +1,10 @@
 package com.kingofneurons.esport.lol.api.endpoints.dto.schedule_Items;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.Date;
 
-@Document(collection="lol_scheduleItem")
 public class ScheduleItem {
 
-    @Id private String id;
+    private String id;
     private Date scheduledTime;
     private String match;
     private String bracket;

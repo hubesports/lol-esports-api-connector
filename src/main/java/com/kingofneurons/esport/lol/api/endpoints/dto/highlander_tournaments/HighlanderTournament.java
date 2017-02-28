@@ -1,18 +1,13 @@
 package com.kingofneurons.esport.lol.api.endpoints.dto.highlander_tournaments;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.TextIndexed;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.List;
 import java.util.Map;
 
-@Document(collection="lol_highlanderTournament")
 public class HighlanderTournament {
 
-    @Id private String id;
+     private String id;
     private String title;
-    @TextIndexed private String description;
+    private String description;
     private String startDate;
     private String endDate;
     private String league;

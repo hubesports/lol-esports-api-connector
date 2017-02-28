@@ -1,14 +1,10 @@
 package com.kingofneurons.esport.lol.api.endpoints.dto.stats_game;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.List;
 
-@Document(collection="lol_statsGame")
 public class StatsGame {
 
-    @Id private transient String gameHashId;
+    private transient String gameHashId;
     private long gameId;
     private String platformId;
     private long gameCreation;

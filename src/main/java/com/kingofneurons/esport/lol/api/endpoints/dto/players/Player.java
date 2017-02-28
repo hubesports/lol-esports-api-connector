@@ -1,18 +1,12 @@
 package com.kingofneurons.esport.lol.api.endpoints.dto.players;
 
-
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.TextIndexed;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document(collection="lol_player")
 public class Player {
 
-    @Id private int id;
+    private int id;
     private String slug;
-    @TextIndexed private String name;
-    @TextIndexed private String firstName;
-    @TextIndexed private String lastName;
+    private String name;
+    private String firstName;
+    private String lastName;
     private String roleSlug;
     private String photoUrl;
     private String hometown;

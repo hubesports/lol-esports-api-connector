@@ -1,14 +1,10 @@
 package com.kingofneurons.esport.lol.api.endpoints.dto.highlander_match_details;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import java.util.List;
 
-@Document(collection="lol_highlanderMatchDetails")
 public class HighlanderMatchDetails {
 
-    @Id private transient String idMatch;
+    private transient String idMatch;
     private transient String idTournament;
     private List<GameMapping> gameIdMappings;
     private List<Video> videos;
